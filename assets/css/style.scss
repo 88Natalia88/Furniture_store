@@ -27,7 +27,7 @@
 }
 
 .text-page {
-    background-image: url(images/room-3d.jpg);
+    background-image: url(../img/room-3d.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -191,7 +191,7 @@
     }
 }
 
-@media screen and(max-width:768px) and(min-width:640px) {
+@media screen and (max-width:768px) and (min-width:640px) {
     .text-page {
         background-size: 100%;
         background-position: 0 0;
@@ -256,7 +256,7 @@
     }
 }
 
-@media screen and(max-width:639px) {
+@media screen and (max-width:639px) {
     .header__menu-link {
         display: none;
     }
@@ -321,7 +321,7 @@
     }
 }
 
-@media screen and(min-width: 1441px) {
+@media screen and (min-width: 1441px) {
     .text-page {
         background-size: 100%;
     }
