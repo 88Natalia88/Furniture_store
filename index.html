@@ -9,45 +9,47 @@
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/style.scss" />
 	<link rel="stylesheet" href="assets/css/normalize.css" />
-	<title>furniture store</title>
+	<link href="assets/itc-slider/itc-slider.css" rel="stylesheet">
+	<script src="assets/itc-slider/itc-slider.js" defer></script>
+	<title>Interior</title>
 </head>
 
 <body>
 	<header class="header">
-		<div>
-			<img src="assets/img/Group 2.svg" alt="logo" class="header__logo" />
+		<div class="header-logo">
+			<img src="assets/img/logo/header-logo.svg" alt="logo" class="header__logo" />
 		</div>
 		<!------------------------------Навигация------------------------->
 		<nav>
 			<ul class="header__menu">
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Home</a>
+					<a href="#home" class="header__menu-link">Home</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Pages</a>
+					<a href="#pages" class="header__menu-link">Pages</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Services</a>
+					<a href="#services" class="header__menu-link">Services</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Projects</a>
+					<a href="#project" class="header__menu-link">Projects</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Blog</a>
+					<a href="#blog" class="header__menu-link">Blog</a>
 				</li>
 				<li class="header__menu-item">
-					<a href="" class="header__menu-link">Contact Us</a>
+					<a href="#contact" class="header__menu-link">Contact Us</a>
 				</li>
 			</ul>
 		</nav>
-		<div>
-			<a href="#"><img src="assets/img/Vector1.svg" alt="search" class="header__logo" /></a>
-			<a href="#"><img src="assets/img/Group.svg" alt="cart" class="header__logo" /></a> 
+		<div class="header-logo">
+			<a href="#"><img src="assets/img/logo/search.svg" alt="search" class="header__logo" /></a>
+			<a href="#"><img src="assets/img/logo/cart.svg" alt="cart" class="header__logo cart" /></a> 
 		</div>
 	</header>
 	<main class="main-page">
 		<!----------------------Первая страница------------------------>
-		<div class="text-page">
+		<div class="text-page" id="home">
 			<div class="first-page">
 				<p class="first-page__name">INTERIOR</p>
 				<h1 class="first-page__title">
@@ -73,7 +75,7 @@
 								<div class="slide__title">New Chair Collection 2022</div>
 								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
 							</div>
-							<img class="chair" src="assets/img/image-asset-removebg-preview 1.png" alt="chair">
+							<img class="chair" src="assets/img/catalog/wooden-chair.png" alt="chair">
 						</div>
 						<div class="itc-slider__item">
 							<!-- Контент 2 слайда -->
@@ -81,7 +83,7 @@
 								<div class="slide__title">Lamp Desk</div>
 								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
 							</div>
-							<img class="lamp" src="assets/img/desk-lamp-marble-table 1.png" alt="lamp">
+							<img class="lamp" src="assets/img/catalog/desk-lamp.png" alt="lamp">
 						</div>
 						<div class="itc-slider__item">
 							<!-- Контент 3 слайда -->
@@ -89,7 +91,7 @@
 								<div class="slide__title">Modern Chair Collection 2022</div>
 								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
 							</div>
-							<img class="armchair" src="assets/img/picture-frame-by-velvet-armchair-removebg-preview 1.png"
+							<img class="armchair" src="assets/img/catalog/velvet-armchair.png"
 								alt="armchair">
 						</div>
 						<div class="itc-slider__item">
@@ -98,7 +100,7 @@
 								<div class="slide__title">New Chair Collection 2022</div>
 								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
 							</div>
-							<img class="chair" src="assets/img/image-asset-removebg-preview 1.png" alt="chair">
+							<img class="chair" src="assets/img/catalog/wooden-chair.png" alt="chair">
 						</div>
 						<div class="itc-slider__item">
 							<!-- Контент 5 слайда -->
@@ -106,6 +108,7 @@
 								<div class="slide__title">Lamp Desk</div>
 								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
 							</div>
+							<img class="lamp" src="assets/img/catalog/desk-lamp.png" alt="lamp">
 						</div>
 					</div>
 				</div>
@@ -113,354 +116,320 @@
 				<button class="itc-slider__btn itc-slider__btn_next"></button>
 			</div>
 		</div>
-		<!--Башина_part 2-->
-		<div class="third-page">
-			<div class="mini-logo">
-				<img src="assets/img/profiteam.png" alt="minilogo" />
-			</div>
-			<div class="navbar">
-				<p class="navbar__title">The Best New Arrivals</p>
-				<div class="navbar__buttons">
-					<input type="button" class="btn" value="Desk" />
-					<input type="button" class="btn" value="Bedroom" />
-					<input type="button" class="btn" value="Lighting" />
-					<input type="button" class="btn" value="Accessories" />
+<div class="arrivals" id="pages">
+	<div class="arrivals__theme">
+		<hr class="arrivals__theme-line line">
+		<h3 class="arrivals__theme_title">PROFESSIONAL TEAM</h3>
+	</div>
+	<div class="arrivals__name">
+		<h2 class="arrivals__name_title">The Best New Arrivals</h2>
+		<div class="arrivals__navbar">
+			<a href="#">Desk</a>
+			<a href="#">Bedroom</a>
+			<a href="#">Lighting</a>
+			<a href="#">Accessories</a>
+		</div>
+	</div>
+	<div class="good-cards">
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/blue_chair.png" alt="chair" />
+				</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
 				</div>
 			</div>
-			<div class="good-cards">
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/blue_chair.png" alt="chair" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Blue chair</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise"><s>$20.00</s> $15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Beige armchair</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise"><s>$20.00</s> $15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
 					</div>
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/guest_chair.png" alt="chair" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Blue chair</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise"><s>$18.00</s> $20.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
+			</div>
+			
+		</div>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/guest_chair.png" alt="chair" />
+				</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+				</div>
+			</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>White armchair</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise"><s>$18.00</s> $20.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
 					</div>
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/coral_vase.png" alt="vase" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Coral vase</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise">$15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
-					</div>
+			</div>
+			
+		</div>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/coral-vase.png" alt="vase" />
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/white_chair.png" alt="vase" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Coffe table set</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise">$15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
-					</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/grey_lamp.png" alt="lamp" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Decorative vase</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise">$15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
-					</div>
+			</div>
+		<div class="good-info__info">
+			<div class="good__text">
+				<h4>Coral vase</h4>
+			</div>
+			<div class="good__parametr">
+				<div class="good__prise">$15.00</div>
+				<div class="good__grade">
+					<img src="assets/img/icon/star.svg" alt="star" />
+					<img src="assets/img/icon/star.svg" alt="star" />
+					<img src="assets/img/icon/star.svg" alt="star" />
+					<img src="assets/img/icon/star.svg" alt="star" />
+					<img src="assets/img/icon/star.svg" alt="star" />
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/little_green_tree.png" alt="green tree" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Coral vase</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise"><s>$20.00</s> $12.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
-					</div>
+			</div>
+		</div>
+		</div>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/white_chair.png" alt="vase" />
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/gray_sofa.png" alt="chair" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Gray sofa</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise"><s>$20.00</s> $15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
-					</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
 				</div>
-				<div class="good">
-					<div class="good__image">
-						<img class="image" src="assets/img/black_chair.png" alt="black chair" />
-					</div>
-					<div class="good__icons">
-						<img class="icon" src="assets/img/round_arrows.png" alt="arrows" />
-						<img class="icon" src="assets/img/heart.png" alt="heart" />
-						<img class="icon" src="assets/img/shopping_cart.png" alt="cart" />
-					</div>
-					<div class="good__text">
-						<h4>Black chair</h4>
-					</div>
-					<div class="good__parametr">
-						<div class="good__prise"><s>$20.00</s> $15.00</div>
-						<div class="good__grade">
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-							<img src="assets/img/star.png" alt="star" />
-						</div>
+			</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Coffe table set</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise">$15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
-
-	<!----------------------Третья страница------------------------>
-
-	<!--<section class="section-3">
-
-		<div class="third-page_title">
-			<hr class="third-page_line17">
-			<hr class="third-page_title1">What people say</hr>
-			<hr class="third-page_line18">
-		</div>
-
-		<h1 class="third-page_title">Words Of Our Clients</h1>
-
-		<div class="flexcontainer">
-
-			<div class="container1">
-				<img src="images/cooper.png" class="avatar" />
-				<p class="boxname">Bessie Cooper</p>
-				<p class="boxtext">Communications Director</p>
-				<div class="star__grade">
-					<img src="images/star.png" alt="star" />
-					4.0
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/grey_lamp.png" alt="lamp" />
 				</div>
-				<p class="boxtext">
-					I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After
-					Skyrocketed Heaven To Delhi
-				</p>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+				</div>
 			</div>
-
-			<div class="container2">
-				<img src="images/jolie.png" class="avatar" />
-				<p class="boxname">Anjelina Jolie</p>
-				<p class="boxtext">Sales Manager</p>
-				<div class="star__grade">
-					<img src="images/star.png" alt="star" />
-					4.0
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Decorative lamp</h4>
 				</div>
-				<p class="boxtext">
-					I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After
-					Skyrocketed Heaven To Delhi
-				</p>
-			</div>
-
-			<div class="container3">
-				<img src="images/brooklin.png" class="avatar" />
-				<p class="boxname">Brooklyn Simmons</p>
-				<p class="boxtext">Public Relations Specialist</p>
-				<div class="srat__grade">
-					<img src="images/star.png" alt="star" />
-					4.0
+				<div class="good__parametr">
+					<div class="good__prise">$15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+					</div>
 				</div>
-				<p class="boxtext">
-					I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After
-					Skyrocketed Heaven To Delhi
-				</p>
-			</div>
-
-			<div class="container4">
-				<img src="images/bessie.png" class="avatar" />
-				<p class="boxname">Bessie Cooper</p>
-				<p class="boxtext">Communications Director</p>
-				<div class="star__grade">
-					<img src="images/star.png" alt="star" />
-					4.0
-				</div>
-				<p class="boxtext">
-					I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After
-					Skyrocketed Heaven To Delhi
-				</p>
 			</div>
 		</div>
-	</section>-->
-	<!----------------------Третья страница конец------------------------>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/little_green_tree.png" alt="green tree" />
+				</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+				</div>
+			</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Decorative vase</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise"><s>$20.00</s> $12.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/gray_sofa.png" alt="chair" />
+				</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+				</div>
+			</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Gray chair</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise"><s>$20.00</s> $15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		<div class="good">
+			<div class="good-info">
+				<div class="good__image">
+					<img class="image" src="assets/img/catalog/black_chair.png" alt="black chair" />
+				</div>
+				<div class="good__icons">
+					<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+				</div>
+			</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Black chair</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise"><s>$20.00</s> $15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</main>	
+
 	<!-----------------------------MadJillBlock3------------------->
-	<section class="reviews">
+<section class="reviews">
 		<div class="reviews__container">
-			<div class="reviews__title">WHAT PEOPLE SAY</div>
+			<div class="reviews__container-title">
+				<hr class="reviews__line">
+				<h3 class="reviews__title">WHAT PEOPLE SAY</h3>
+				<hr class="reviews__line">
+			</div>
 			<div class="reviews__subtitle">Words Of Our Clients</div>
-			<div class="slider">
-				<div class="slider__container">
-
-					<div class="slider__item">
-						<div class="slider__img">
-							<img src="assets/img/user.png" alt="user">
+			<div class="photo">
+				<div class="photo__container">
+					<div class="photo__item">
+						<div class="photo__img">
+							<img src="assets/img/user/cooper.png" alt="user">
 						</div>
-						<div class="slider__info">
-							<div class="slider__title">Bessie Cooper</div>
-							<div class="slider__subtitle">Communications Director</div>
-							<div class="slider__feedback">
-								<img class="slider__icon" src="assets/img/star.svg" alt="star">
-								<div class="slider__rating">4.0</div>
+						<div class="photo__info">
+							<div class="photo__title">Bessie Cooper</div>
+							<div class="photo__subtitle">Communications Director</div>
+							<div class="photo__feedback">
+								<img class="photo__icon" src="assets/img/icon/star.svg" alt="star">
+								<div class="photo__rating">4.0</div>
 							</div>
 						</div>
-						<div class="slider__divider"></div>
-						<div class="slider__description">I Have Gotten At Least 50 Times The Value From Surely. After
+						<div class="photo__description">I Have Gotten At Least 50 Times The Value From Surely. After
 							Using Surely My Business After Skyrocketed Heaven To Delhi</div>
 					</div>
 
-					<div class="slider__item ">
-						<div class="slider__img">
-							<img src="assets/img/user2.png" alt="user">
+					<div class="photo__item ">
+						<div class="photo__img">
+							<img src="assets/img/user/jolie.png" alt="user">
 						</div>
-						<div class="slider__info">
-							<div class="slider__title">Anjelina Jolie</div>
-							<div class="slider__subtitle">Sales Manager</div>
-							<div class="slider__feedback">
-								<img class="slider__icon" src="assets/img/star.svg" alt="star">
-								<div class="slider__rating">4.0</div>
+						<div class="photo__info">
+							<div class="photo__title">Anjelina Jolie</div>
+							<div class="photo__subtitle">Sales Manager</div>
+							<div class="photo__feedback">
+								<img class="photo__icon" src="assets/img/icon/star.svg" alt="star">
+								<div class="photo__rating">4.0</div>
 							</div>
 						</div>
-						<div class="slider__divider"></div>
-						<div class="slider__description">I Have Gotten At Least 50 Times The Value From Surely. After
+						<div class="photo__divider"></div>
+						<div class="photo__description">I Have Gotten At Least 50 Times The Value From Surely. After
 							Using Surely My Business After Skyrocketed Heaven To Delhi</div>
 					</div>
 
-					<div class="slider__item ">
-						<div class="slider__img">
-							<img src="assets/img/user3.png" alt="user">
+					<div class="photo__item ">
+						<div class="photo__img">
+							<img src="assets/img/user/brooklin.png" alt="user">
 						</div>
-						<div class="slider__info">
-							<div class="slider__title">Brooklyn Simmons</div>
-							<div class="slider__subtitle">Public Relations Specialist</div>
-							<div class="slider__feedback">
-								<img class="slider__icon" src="assets/img/star.svg" alt="star">
-								<div class="slider__rating">4.0</div>
+						<div class="photo__info">
+							<div class="photo__title">Brooklyn Simmons</div>
+							<div class="photo__subtitle">Public Relations Specialist</div>
+							<div class="photo__feedback">
+								<img class="photo__icon" src="assets/img/icon/star.svg" alt="star">
+								<div class="photo__rating">4.0</div>
 							</div>
 						</div>
-						<div class="slider__divider"></div>
-						<div class="slider__description">I Have Gotten At Least 50 Times The Value From Surely. After
+						<div class="photo__divider"></div>
+						<div class="photo__description">I Have Gotten At Least 50 Times The Value From Surely. After
 							Using Surely My Business After Skyrocketed Heaven To Delhi</div>
 					</div>
 
-					<div class="slider__item">
-						<div class="slider__img">
-							<img src="assets/img/user4.png" alt="user">
+					<div class="photo__item">
+						<div class="photo__img">
+							<img src="assets/img/user/bessie.png" alt="user">
 						</div>
-						<div class="slider__info">
-							<div class="slider__title">Bessie Cooper</div>
-							<div class="slider__subtitle">Communications Director</div>
-							<div class="slider__feedback">
-								<img class="slider__icon" src="assets/img/star.svg" alt="star">
-								<div class="slider__rating">4.0</div>
+						<div class="photo__info">
+							<div class="photo__title">Bessie Cooper</div>
+							<div class="photo__subtitle">Communications Director</div>
+							<div class="photo__feedback">
+								<img class="photo__icon" src="assets/img/icon/star.svg" alt="star">
+								<div class="photo__rating">4.0</div>
 							</div>
 						</div>
-						<div class="slider__divider"></div>
-						<div class="slider__description">I Have Gotten At Least 50 Times The Value From Surely. After
+						<div class="photo__divider"></div>
+						<div class="photo__description">I Have Gotten At Least 50 Times The Value From Surely. After
 							Using Surely My Business After Skyrocketed Heaven To Delhi</div>
 					</div>
 
@@ -471,146 +440,163 @@
 	<!-------------------------------------------------------MadJillBlock3---------------------->
 
 	<!--------------------page 4----------------------->
-	<div class="block-name">
-		<div class="block-name__theme">
-			<img class="block-name-image" src="assets/img/Line17.svg" alt="line">
-			popular product
+	<div class="special-product" id="project">
+		<div class="block-name">
+			<div class="block-name__theme">
+				<hr class="block-name__line line">
+				<h3 class="block-name__title">RECENT ARTICLES</h3>
+			</div>
+			<div class="block-name__name">
+				<div class="block-name__article">Top Special Product</div>
+				<div class="block-name__button-line">
+					<button class="block-name__button">Top Special Product</button>
+				</div>
+			</div>
 		</div>
-		<div class="button">
-			<button>See More Product</button>
-		</div>
-		<div class="block-name__title">Top Special Product</div>
+		<div class="good-cards special">
+			<div class="good">
+				<div class="good-info">
+					<div class="good__image">
+						<img class="image" src="assets/img/catalog/blue_chair.png" alt="chair" />
+					</div>
+					<div class="good__icons">
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+					</div>
+				</div>
+				<div class="good-info__info">
+					<div class="good__text">
+						<h4>Beige armchair</h4>
+					</div>
+					<div class="good__parametr">
+						<div class="good__prise"><s>$20.00</s> $15.00</div>
+						<div class="good__grade">
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="good">
+				<div class="good-info">
+					<div class="good__image">
+						<img class="image" src="assets/img/catalog/guest_chair.png" alt="chair" />
+					</div>
+					<div class="good__icons">
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+					</div>
+				</div>
+				<div class="good-info__info">
+					<div class="good__text">
+						<h4>White armchair</h4>
+					</div>
+					<div class="good__parametr">
+						<div class="good__prise"><s>$18.00</s> $20.00</div>
+						<div class="good__grade">
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="good">
+				<div class="good-info">
+					<div class="good__image">
+						<img class="image" src="assets/img/catalog/coral-vase.png" alt="vase" />
+					</div>
+					<div class="good__icons">
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+							<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+							<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+					</div>
+				</div>
+			<div class="good-info__info">
+				<div class="good__text">
+					<h4>Coral vase</h4>
+				</div>
+				<div class="good__parametr">
+					<div class="good__prise">$15.00</div>
+					<div class="good__grade">
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+						<img src="assets/img/icon/star.svg" alt="star" />
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="good">
+				<div class="good-info">
+					<div class="good__image">
+						<img class="image" src="assets/img/catalog/white_chair.png" alt="vase" />
+					</div>
+					<div class="good__icons">
+						<a href="#"><img class="icon" src="assets/img/icon/Vector-update.svg" alt="arrows" /></a>
+							<a href="#"><img class="icon" src="assets/img/icon/Vector-like.svg" alt="heart" /></a>
+							<a href="#"><img class="icon" src="assets/img/icon/Vector-basket.svg" alt="cart" /></a>
+					</div>
+				</div>
+				<div class="good-info__info">
+					<div class="good__text">
+						<h4>Coffe table set</h4>
+					</div>
+					<div class="good__parametr">
+						<div class="good__prise">$15.00</div>
+						<div class="good__grade">
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+							<img src="assets/img/icon/star.svg" alt="star" />
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
-
-	<!--4 pictures of special product-->
-	<div class="Special-product">
-
-		<!--Picture Blue chair-1-->
-		<div class="blue-chair-1">
-			<div class="blue-chair-1__background"></div>
-			<img class="blue-chair-1__image" src="assets/img/blue-chair-1.png" alt="blue chair">
-			<div class="Special-product-icons">
-				<img class="Special-product-icons__update" src="assets/img/Vector-update.svg" alt="update icon">
-				<img class="Special-product-icons__like" src="assets/img/Vector-like.svg" alt="like icon">
-				<img class="Special-product-icons__basket" src="assets/img/Vector-basket.svg" alt="basket icon">
-			</div>
-			<div class="Special-product__name">Blue chair</div>
-			<div class="Price-and-rating">
-				<div class="price_old">$20.00</div>
-				<div class="price_new">$15.00</div>
-				<div class="raiting">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-				</div>
-			</div>
-		</div>
-
-		<!--Picture Blue chair-2-->
-		<div class="blue-chair-2">
-			<div class="blue-chair-2__background"></div>
-			<img class="blue-chair-2__image" src="assets/img/blue-chair-2.png" alt="blue chair">
-			<div class="Special-product-icons">
-				<img class="Special-product-icons__update" src="assets/img/Vector-update.svg" alt="update icon">
-				<img class="Special-product-icons__like" src="assets/img/Vector-like.svg" alt="like icon">
-				<img class="Special-product-icons__basket" src="assets/img/Vector-basket.svg" alt="basket icon">
-			</div>
-			<div class="Special-product__name">Blue chair</div>
-			<div class="Price-and-rating">
-				<div class="price_old">$18.00</div>
-				<div class="price_new">$12.00</div>
-				<div class="raiting">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-				</div>
-			</div>
-		</div>
-
-		<!--Picture Coral vase-->
-		<div class="coral-vase">
-			<div class="coral-vase__background"></div>
-			<img class="coral-vase__image" src="assets/img/coral-vase.png" alt="coral vase">
-			<div class="Special-product-icons">
-				<img class="Special-product-icons__update" src="assets/img/Vector-update.svg" alt="update icon">
-				<img class="Special-product-icons__like" src="assets/img/Vector-like.svg" alt="like icon">
-				<img class="Special-product-icons__basket" src="assets/img/Vector-basket.svg" alt="basket icon">
-			</div>
-			<div class="Special-product__name">Coral vase</div>
-			<div class="Price-and-rating">
-				<div class="price_new">$15.00</div>
-				<div class="raiting-1">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-				</div>
-			</div>
-		</div>
-
-		<!--Picture Coffee table set-->
-		<div class="coffe-table-set">
-			<div class="coffe-table-set__background"></div>
-			<img class="coffe-table-set__image" src="assets/img/coffe-table-set.png" alt="coffee table set">
-			<div class="Special-product-icons">
-				<img class="Special-product-icons__update" src="assets/img/Vector-update.svg" alt="update icon">
-				<img class="Special-product-icons__like" src="assets/img/Vector-like.svg" alt="like icon">
-				<img class="Special-product-icons__basket" src="assets/img/Vector-basket.svg" alt="basket icon">
-			</div>
-			<div class="Special-product__name">Coffee table set</div>
-			<div class="Price-and-rating">
-				<div class="price_new">$15.00</div>
-				<div class="raiting-1">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-					<img class="star1" src="assets/img/Vector-star.svg" alt="star icon">
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<!--Block with advantages-->
-	<div class="advantages">
+	<div class="advantages" id="services">
 		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/Vector-shipping.svg" alt="free shipping">
+			<img class="advantage__icon" src="assets/img/icon/Vector-shipping.svg" alt="free shipping">
 			<div class="advantage__text">
 				<div class="title">Free Shipping</div>
 				<div class="description">Capped at $319 per order</div>
 			</div>
 		</div>
 
-		<img class="vertical line" src="assets/img/Line22.svg" alt="vertical line">
+		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
 
 		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/Vector-return.svg" alt="free return">
+			<img class="advantage__icon" src="assets/img/icon/Vector-return.svg" alt="free return">
 			<div class="advantage__text">
 				<div class="title">Free Returns</div>
 				<div class="description">Within 25 Days</div>
 			</div>
 		</div>
 
-		<img class="vertical line" src="assets/img/Line22.svg" alt="vertical line">
+		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
 
 		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/Group-secure.svg" alt="100% secure">
+			<img class="advantage__icon" src="assets/img/icon/Group-secure.svg" alt="100% secure">
 			<div class="advantage__text">
 				<div class="title">100% Secure</div>
 				<div class="description">100% Secure payment</div>
 			</div>
 		</div>
-
-		<img class="vertical line" src="assets/img/Line22.svg" alt="vertical line">
-
+		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
 		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/Group-price.svg" alt="best price">
-			<div class="advantage__text">
+			<img class="advantage__icon" src="assets/img/icon/Group-price.svg" alt="best price">
+			<div class="advantage__text text">
 				<div class="title">Best Price</div>
 				<div class="description">Guaranteed Gifts</div>
 			</div>
@@ -619,11 +605,11 @@
 
 
 	<!----------------------Part 5 Смирнова Анна начало----------------------->
-	<div class="articles">
+	<div class="articles" id="blog">
 		<div class="articles__recent">
-			<hr class="articles__recent_line">
+			<hr class="articles__recent_line line">
 			<h3 class="articles__recent_title">RECENT ARTICLES</h3>
-			<hr class="articles__recent_line">
+			<hr class="articles__recent_line line">
 		</div>
 		<div class="articles__latest">
 			<h2 class="articles__latest_title">Read Our Latest Articles</h2>
@@ -635,7 +621,7 @@
 			<div class="articles__group">
 
 				<div class="articles__group_block">
-					<img src="assets/img/living-room-interior-have-cabinet-tv-leather-armchair-white-room-3d-rendering-1.jpg"
+					<img src="assets/img/catalog/armchair.jpg"
 						alt="Things to Know When Choosing
                 the Perfect Sofa" class="articles__group_block_picture">
 					<div class="articles__group_block_calendar">
@@ -644,9 +630,9 @@
 					</div>
 					<div class="articles__group_block_content">
 						<div class="info">
-							<img src="assets/img/person.png" alt="" class="info__img">
+							<img src="assets/img/icon/person.png" alt="" class="info__img">
 							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/comment.png" alt="" class="info__img">
+							<img src="assets/img/icon/comment.png" alt="" class="info__img">
 							<a href="" class="info__text">9 Comments</a>
 						</div>
 						<div class="article">
@@ -659,18 +645,18 @@
 					</div>
 				</div>
 				<div class="articles__group_block">
-					<img src="assets/img/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering-2.jpg"
+					<img src="assets/img/catalog/blue-sofa.jpg"
 						alt="Things to Know When Choosing
                 the Perfect Sofa" class="articles__group_block_picture">
 					<div class="articles__group_block_calendar">
-						<p class="date">05</p>
-						<p class="month">May</p>
+						<p class="date">23</p>
+						<p class="month">Jun</p>
 					</div>
 					<div class="articles__group_block_content">
 						<div class="info">
-							<img src="assets/img/person.png" alt="" class="info__img">
+							<img src="assets/img/icon/person.png" alt="" class="info__img">
 							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/comment.png" alt="" class="info__img">
+							<img src="assets/img/icon/comment.png" alt="" class="info__img">
 							<a href="" class="info__text">9 Comments</a>
 						</div>
 						<div class="article">
@@ -683,18 +669,18 @@
 					</div>
 				</div>
 				<div class="articles__group_block">
-					<img src="assets/img/green-sofa-modern-apartment-interior-with-empty-wall-wooden-table-3d-rendering-3.jpg"
+					<img src="assets/img/catalog/green-sofa.jpg"
 						alt="Things to Know When Choosing
                 the Perfect Sofa" class="articles__group_block_picture">
 					<div class="articles__group_block_calendar">
-						<p class="date">05</p>
+						<p class="date">15</p>
 						<p class="month">May</p>
 					</div>
 					<div class="articles__group_block_content">
 						<div class="info">
-							<img src="assets/img/person.png" alt="" class="info__img">
+							<img src="assets/img/icon/person.png" alt="" class="info__img">
 							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/comment.png" alt="" class="info__img">
+							<img src="assets/img/icon/comment.png" alt="" class="info__img">
 							<a href="" class="info__text">9 Comments</a>
 						</div>
 						<div class="article">
@@ -723,7 +709,7 @@
 		<div class="footer_container">
 			<div class="logo_text_div">
 				<div>
-					<img id="logo_footer" src="assets/img/Logo_footer.png" alt="Логотип дом" />
+					<img id="logo_footer" src="assets/img/logo/Logo_footer.png" alt="Логотип дом" />
 				</div>
 				<h1 class="logo_text">interior</h1>
 			</div>
@@ -742,13 +728,13 @@
 			</form>
 		</div>
 	</footer>
-	<address>
+	<address id="contact">
 		<div class="address_container">
 			<p class="adress_text">Copyright 2022 - Designed & Developed by Frenify</p>
 			<div class="network_logo">
-				<a><img src="assets/img/facebook_logo.svg" alt="иконка фейсбук" /></a><a><img src="assets/img/Insta_logo.svg"
-						alt="иконка инстаграмм" /></a><a><img src="assets/img/twitter_logo.svg"
-						alt="иконка твиттер" /></a><a><img src="assets/img/logo2.svg" alt="иконка" /></a>
+				<a href="#"><img src="assets/img/logo/facebook_logo.svg" alt="иконка фейсбук" /></a><a href="#"><img src="assets/img/logo/Insta_logo.svg"
+						alt="иконка инстаграмм" /></a><a href="#"><img src="assets/img/logo/twitter_logo.svg"
+						alt="иконка твиттер" /></a><a href="#"><img src="assets/img/logo2.svg" alt="иконка" /></a>
 			</div>
 		</div>
 	</address>
