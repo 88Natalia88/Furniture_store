@@ -733,46 +733,12 @@
     margin-left: 10px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .reviews {
-    padding-top: 25px;
-    min-height: 750px;
+    max-width: 750px;
   }
-  .reviews__container {
-    padding: 0;
-    width: 85%;
-  }
-  .photo {
-    width: 100%;
-  }
-  .photo__item {
-    margin: 0 20px 50px 20px;
-    width: 225px;
-  }
-  .photo__img {
-    left: 60px;
-  }
-}
-@media only screen and (max-width: 623px) {
-  .reviews {
-    height: 1500px;
-  }
-  .photo__container {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .reviews__title {
-    font-size: 12px;
-  }
-  .reviews__subtitle {
-    font-size: 25px;
-  }
-  .reviews__container {
-    width: 95%;
-  }
-  .photo__img {
-    left: 60px;
+  .reviews__container-title {
+    margin-left: 260px;
   }
 }
 /*----------------------Page 4------------------------*/
@@ -843,7 +809,7 @@
   position: absolute;
   border-top: 0.6px solid black;
   width: 140px;
-  right: 182px;
+  right: 396px;
 }
 .block-name__button-line::after {
   content: "";
@@ -916,6 +882,29 @@
   background-color: white;
 }
 
+@media screen and (max-width: 1440px) {
+  .block-name__button-line::before {
+    right: 166px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .special-product {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .block-name__button-line::before {
+    right: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .special-product {
+    max-width: 750px;
+  }
+  .block-name__button-line::before {
+    right: 10px;
+  }
+}
 /*----------------------Part 5 Смирнова Анна начало------------------------*/
 @media screen and (min-width: 1024px) {
   .articles {
