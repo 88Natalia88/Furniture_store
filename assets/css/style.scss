@@ -54,7 +54,8 @@
         position: absolute;
         border-bottom: 1px solid #6b6c71;
         width: 292px;
-        left: 410px;
+        //left: 410px;
+        left: 189px;
         top: 340px;
     }
 
@@ -63,7 +64,8 @@
         position: absolute;
         border-right: 1px solid #6b6c71;
         height: 261px;
-        left: 420px;
+        //left: 420px;
+        left: 200px;
         top: 330px;
     }
 
@@ -126,8 +128,10 @@
         position: absolute;
         border-top: 0.6px solid black;
         width: 122px;
-        left: 433.5px;
-        top: 581px;
+        //left: 433.5px;
+        //top: 581px;
+        left: 214px;
+        top: 582px;
         bottom: 0;
     }
 
@@ -137,8 +141,10 @@
         border-left: 0.6px solid black;
         height: 45px;
         bottom: 0;
-        left: 441px;
-        top: 574px;
+        //left: 441px;
+        //top: 574px;
+        left: 225px;
+        top: 573px;
     }
 }
 @media screen and (max-width: 1440px){
@@ -906,7 +912,7 @@ grid-template-rows: 1fr;
         position: absolute;
         border-top: 0.6px solid black;
         width: 140px;
-        right: 395px;
+        right: 182px;
     }
 
     &__button-line::after {
