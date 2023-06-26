@@ -31,16 +31,19 @@
 .cart{
     margin-left: 27px;
 }
+
 .text-page {
     background-image: url(../img/catalog/room-3d.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    //background-position: center center;
+    //background-size: cover;
+    background-size: 100%;
+    background-position: 0 0;
     font-family: "Nunito Sans";
     padding-top: 10px;
     padding-bottom: 0;
-    //height: 105vh;
-    height: 1000px;
+    height: 105vh;
+    //height: 1400px;
     //width: 100%;
     //max-width: 1440px;
     //margin: 0 auto;
@@ -48,7 +51,8 @@
 
 .first-page {
     line-height: 1.5;
-    margin: 400px 0 0 250px;
+    //margin: 400px 0 0 250px;
+    margin: 500px 0 0 300px;
 
     &::after {
         content: "";
@@ -156,7 +160,115 @@
         //top: 573px;
     }
 }
+@media screen and (max-width: 2560px) and (min-width: 2200px) {
+    .first-page {
+        margin: 650px 0 0 350px;
+    }
+    .first-page__button-line::before {
+        top: 963px;
+        left: 341px;
+    }
 
+    .first-page__button-line::after {
+        top: 958px;
+        left: 350px;
+    }
+
+    .first-page::after {
+        left: 320px;
+        top: 700px;
+    }
+
+    .first-page::before {
+        left: 330px;
+        top: 691px;
+    }
+}
+@media screen and (max-width: 2199px) and (min-width: 2100px) {
+    .first-page {
+        //margin: 500px 0 0 300px;
+    
+        &::after {
+            top: 560px;
+        }
+    
+        &::before {
+            top: 548px;
+        }
+        &__button-line::before {
+            top: 813px;
+            left: 13.3vw;
+        }
+    
+        &__button-line::after {
+            left: 13.6vw;
+            top: 806px;
+        }
+    }
+}
+@media screen and (max-width: 2099px) and (min-width: 1980px) {
+    .first-page {
+    
+        &::after {
+            top: 560px;
+        }
+    
+        &::before {
+            top: 548px;
+        }
+        &__button-line::before {
+            top: 812px;
+            left: 14.7vw;
+        }
+    
+        &__button-line::after {
+            left: 15vw;
+            top: 806px;
+        }
+    }
+}
+@media screen and (max-width: 1979px) and (min-width: 1700px) {
+    .first-page {
+        margin: 370px 0 0 250px;
+        &::after {
+            top: 440px;
+        }
+    
+        &::before {
+            top: 430px;
+        }
+        &__button-line::before {
+            top: 682px;
+            left: 13.7vw;
+        }
+    
+        &__button-line::after {
+            left: 14.1vw;
+            top: 677px;
+        }
+    }
+}
+@media screen and (max-width: 1699px) and (min-width: 1441px) {
+    .first-page {
+        margin: 370px 0 0 250px;
+        &::after {
+            top: 440px;
+        }
+    
+        &::before {
+            top: 430px;
+        }
+        &__button-line::before {
+            top: 682px;
+            left: 14.33vw;
+        }
+    
+        &__button-line::after {
+            left: 14.7vw;
+            top: 677px;
+        }
+    }
+}
 @media screen and (max-width: 1440px){
     .first-page {
         margin: 250px 0 0 200px;
@@ -368,11 +480,6 @@
     width: 100%;
     max-width: 1110px;
     margin: 94px auto 0 auto;
-    /*font-family: "Nunito Sans";
-    max-width: 100%;
-    margin: 70px;
-    margin-left: 13%;
-    margin-right: 13%;*/
 }
 
 .itc-slider__item {
@@ -946,10 +1053,6 @@ grid-template-rows: 1fr;
     margin: 0 auto;
     justify-content: space-between;
     margin-top: 111px;
-    /*flex-wrap: wrap;
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;*/
 }
 .text{
     margin-right: 50px;
@@ -983,10 +1086,116 @@ grid-template-rows: 1fr;
     margin-right: 10vw;
     background-color: white;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2560px) and (min-width: 2500px) {
     .block-name{
         &__button-line::before {
-            right: 166px;
+            right: 726px;
+        }
+    }
+}
+@media screen and (max-width: 2499px) and (min-width: 2400px) {
+    .block-name{
+        &__button-line::before {
+            right: 695px;
+        }
+    }
+}
+@media screen and (max-width: 2399px) and (min-width: 2300px) {
+    .block-name{
+        &__button-line::before {
+            right: 640px;
+        }
+    }
+}
+@media screen and (max-width: 2299px) and (min-width: 2200px) {
+    .block-name{
+        &__button-line::before {
+            right: 594px;
+        }
+    }
+}
+@media screen and (max-width: 2199px) and (min-width: 2100px) {
+    .block-name{
+        &__button-line::before {
+            right: 508px;
+        }
+    }
+}
+@media screen and (max-width: 2099px) and (min-width: 2000px) {
+    .block-name{
+        &__button-line::before {
+            right: 488px;
+        }
+    }
+}
+@media screen and (max-width: 1999px) and (min-width: 1900px) {
+    .block-name{
+        &__button-line::before {
+            right: 442px;
+        }
+    }
+}
+@media screen and (max-width: 1899px) and (min-width: 1800px) {
+    .block-name{
+        &__button-line::before {
+            right: 350px;
+        }
+    }
+}
+@media screen and (max-width: 1799px) and (min-width: 1700px) {
+    .block-name{
+        &__button-line::before {
+            right: 327px;
+        }
+    }
+}
+@media screen and (max-width: 1699px) and (min-width: 1600px) {
+    .block-name{
+        &__button-line::before {
+            right: 260px;
+        }
+    }
+}
+@media screen and (max-width: 1599px) and (min-width: 1500px) {
+    .block-name{
+        &__button-line::before {
+            right: 238px;
+        }
+    }
+}
+@media screen and (max-width: 1499px) and (min-width: 1400px) {
+    .block-name{
+        &__button-line::before {
+            right: 191px;
+        }
+    }
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1300px) {
+    .block-name{
+        &__button-line::before {
+            right: 130px;
+        }
+    }
+}
+@media screen and (max-width: 1299px) and (min-width: 1200px) {
+    .block-name{
+        &__button-line::before {
+            right: 90px;
+        }
+    }
+}
+@media screen and (max-width: 1199px) and (min-width: 1100px) {
+    .block-name{
+        &__button-line::before {
+            right: 39px;
+        }
+    }
+}
+@media screen and (max-width: 1099px) and (min-width: 1000px) {
+    .block-name{
+        &__button-line::before {
+            right: 5px;
         }
     }
 }
