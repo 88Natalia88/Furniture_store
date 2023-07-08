@@ -20,7 +20,6 @@ This project is a site to be able to see the assortment of the store. One-page s
 ![Image alt](https://github.com/88Natalia88/Furniture_store/blob/main/shop%20screen3.png)
 ![Image alt](https://github.com/88Natalia88/Furniture_store/blob/main/shop%20screen4.png)
 
-[Сlick me](88natalia88.github.io/Furniture_store/)
 ​
 ## Authors
 ​
