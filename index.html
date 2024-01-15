@@ -10,60 +10,73 @@
 	<link rel="stylesheet" href="assets/css/style.scss" />
 	<link rel="stylesheet" href="assets/css/normalize.css" />
 	<link href="assets/itc-slider/itc-slider.css" rel="stylesheet">
-	<script src="assets/itc-slider/itc-slider.js" defer></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<title>Interior</title>
+	<script src="assets/itc-slider/itc-slider.js" defer></script>
 </head>
 
 <body>
 	<header class="header">
-		<div class="header-logo">
-			<img src="assets/img/logo/header-logo.svg" alt="logo" class="header__logo" />
+		<div class="header__wrap">
+			<div class="header__logo">
+				<img src="assets/img/logo/header-logo.svg" alt="logo" />
+			</div>
+			<!------------------------------Навигация------------------------->
+			<nav>
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a href="#home" class="header__menu-link">Home</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#pages" class="header__menu-link">Pages</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#services" class="header__menu-link">Services</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#project" class="header__menu-link">Projects</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#blog" class="header__menu-link">Blog</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#contact" class="header__menu-link">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__icon">
+				<a href="#"><img src="assets/img/logo/search.svg" alt="search" /></a>
+				<a href="#"><img src="assets/img/logo/cart.svg" alt="cart" /></a> 
+			</div>
 		</div>
-		<!------------------------------Навигация------------------------->
-		<nav>
-			<ul class="header__menu">
-				<li class="header__menu-item">
-					<a href="#home" class="header__menu-link">Home</a>
-				</li>
-				<li class="header__menu-item">
-					<a href="#pages" class="header__menu-link">Pages</a>
-				</li>
-				<li class="header__menu-item">
-					<a href="#services" class="header__menu-link">Services</a>
-				</li>
-				<li class="header__menu-item">
-					<a href="#project" class="header__menu-link">Projects</a>
-				</li>
-				<li class="header__menu-item">
-					<a href="#blog" class="header__menu-link">Blog</a>
-				</li>
-				<li class="header__menu-item">
-					<a href="#contact" class="header__menu-link">Contact Us</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="header-logo">
-			<a href="#"><img src="assets/img/logo/search.svg" alt="search" class="header__logo" /></a>
-			<a href="#"><img src="assets/img/logo/cart.svg" alt="cart" class="header__logo cart" /></a> 
-		</div>
+		
 	</header>
 	<main class="main-page">
 		<!----------------------Первая страница------------------------>
-		<div class="text-page" id="home">
-			<div class="first-page">
-				<p class="first-page__name">INTERIOR</p>
-				<h1 class="first-page__title">
-					Home Deasigns <br />
-					Made Easy
-				</h1>
-				<p class="first-page__price">$416.00
-					<span class="first-page__price-start">Starting</span>
-				</p>
-				<div class="first-page__button-line">
-					<button class="first-page__button">SHOP NOW</button>
+		<section class="text-page" id="home">
+			<div class="text-page__wrap">
+				<div class="first-page">
+					<p class="first-page__name">INTERIOR</p>
+					<h1 class="first-page__title">
+						Home Deasigns <br />
+						Made Easy
+					</h1>
+					<p class="first-page__price">$416.00
+						<span class="first-page__price-start">Starting</span>
+					</p>
+					<div class="first-page__button-line">
+						<button class="first-page__button">SHOP NOW</button>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--Slider-->
 		<div class="slider">
 			<div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
@@ -72,8 +85,14 @@
 						<div class="itc-slider__item">
 							<!-- Контент 1 слайда -->
 							<div class="slide__content">
-								<div class="slide__title">New Chair Collection 2022</div>
-								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
+								<div class="slide__title">
+									<p>New Chair</p>
+									<p>Collection 2022</p>
+								</div>
+								<div class="item__button-line">
+									<button class="item__button"><a href="#" class="button__link"> SHOP NOW</a></button>
+								</div>
+								
 							</div>
 							<img class="chair" src="assets/img/catalog/wooden-chair.png" alt="chair">
 						</div>
@@ -81,15 +100,22 @@
 							<!-- Контент 2 слайда -->
 							<div class="slide__content">
 								<div class="slide__title">Lamp Desk</div>
-								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
+								<div class="item__button-line">
+									<button class="item__button"><a href="#" class="button__link"> SHOP NOW</a></button>
+								</div>
 							</div>
 							<img class="lamp" src="assets/img/catalog/desk-lamp.png" alt="lamp">
 						</div>
 						<div class="itc-slider__item">
 							<!-- Контент 3 слайда -->
 							<div class="slide__content">
-								<div class="slide__title">Modern Chair Collection 2022</div>
-								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
+								<div class="slide__title">
+									<p>Modern Chair</p>
+									<p>Collection 2022</p>
+								</div>
+								<div class="item__button-line">
+									<button class="item__button"><a href="#" class="button__link"> SHOP NOW</a></button>
+								</div>
 							</div>
 							<img class="armchair" src="assets/img/catalog/velvet-armchair.png"
 								alt="armchair">
@@ -97,8 +123,13 @@
 						<div class="itc-slider__item">
 							<!-- Контент 4 слайда -->
 							<div class="slide__content">
-								<div class="slide__title">New Chair Collection 2022</div>
-								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
+								<div class="slide__title">
+									<p>New Chair</p>
+									<p>Collection 2022</p>
+								</div>
+								<div class="item__button-line">
+									<button class="item__button"><a href="#" class="button__link"> SHOP NOW</a></button>
+								</div>
 							</div>
 							<img class="chair" src="assets/img/catalog/wooden-chair.png" alt="chair">
 						</div>
@@ -106,7 +137,9 @@
 							<!-- Контент 5 слайда -->
 							<div class="slide__content">
 								<div class="slide__title">Lamp Desk</div>
-								<button class="item__button"><a href="" class="button__link"> SHOP NOW</a></button>
+								<div class="item__button-line">
+									<button class="item__button"><a href="#" class="button__link"> SHOP NOW</a></button>
+								</div>
 							</div>
 							<img class="lamp" src="assets/img/catalog/desk-lamp.png" alt="lamp">
 						</div>
@@ -116,20 +149,20 @@
 				<button class="itc-slider__btn itc-slider__btn_next"></button>
 			</div>
 		</div>
-<div class="arrivals" id="pages">
-	<div class="arrivals__theme">
-		<hr class="arrivals__theme-line line">
-		<h3 class="arrivals__theme_title">PROFESSIONAL TEAM</h3>
-	</div>
-	<div class="arrivals__name">
-		<h2 class="arrivals__name_title">The Best New Arrivals</h2>
-		<div class="arrivals__navbar">
-			<a href="#">Desk</a>
-			<a href="#">Bedroom</a>
-			<a href="#">Lighting</a>
-			<a href="#">Accessories</a>
-		</div>
-	</div>
+		<section class="arrivals" id="pages">
+			<div class="arrivals__theme">
+				<hr class="arrivals__theme-line line">
+				<h3 class="arrivals__theme_title">PROFESSIONAL TEAM</h3>
+			</div>
+			<div class="arrivals__name">
+				<h2 class="arrivals__name_title">The Best New Arrivals</h2>
+				<div class="arrivals__navbar">
+					<a href="#">Desk</a>
+					<a href="#">Bedroom</a>
+					<a href="#">Lighting</a>
+					<a href="#">Accessories</a>
+				</div>
+			</div>
 	<div class="good-cards">
 		<div class="good">
 			<div class="good-info">
@@ -352,11 +385,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-	</main>	
-
-	<!-----------------------------MadJillBlock3------------------->
-<section class="reviews">
+</section>
+	<section class="reviews">
 		<div class="reviews__container">
 			<div class="reviews__container-title">
 				<hr class="reviews__line">
@@ -437,10 +467,7 @@
 			</div>
 		</div>
 	</section>
-	<!-------------------------------------------------------MadJillBlock3---------------------->
-
-	<!--------------------page 4----------------------->
-	<div class="special-product" id="project">
+	<section class="special-product" id="project">
 		<div class="block-name">
 			<div class="block-name__theme">
 				<hr class="block-name__line line">
@@ -563,49 +590,58 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	<!--Block with advantages-->
+		</div>
+	</section>
 	<div class="advantages" id="services">
-		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/icon/Vector-shipping.svg" alt="free shipping">
-			<div class="advantage__text">
-				<div class="title">Free Shipping</div>
-				<div class="description">Capped at $319 per order</div>
+		<div class="advantages__wrap">
+			<div class="advantages__item">
+				<div class="advantages__icon">
+					<img src="assets/img/icon/Vector-shipping.svg" alt="free shipping">
+				</div>
+				<div class="advantages__text">
+					<div class="title">Free Shipping</div>
+					<div class="description">Capped at $319 per order</div>
+				</div>
+			</div>
+	        <div class="vertical-line"></div>
+	
+			<div class="advantages__item">
+				<div class="advantages__icon">
+					<img src="assets/img/icon/Vector-return.svg" alt="free return">
+				</div>
+				
+				<div class="advantages__text">
+					<div class="title">Free Returns</div>
+					<div class="description">Within 25 Days</div>
+				</div>
+			</div>
+			<div class="vertical-line"></div>
+	
+			<div class="advantages__item">
+				<div class="advantages__icon">
+					<img src="assets/img/icon/Group-secure.svg" alt="100% secure">
+				</div>
+				
+				<div class="advantages__text">
+					<div class="title">100% Secure</div>
+					<div class="description">100% Secure payment</div>
+				</div>
+			</div>
+			<div class="vertical-line"></div>
+			<div class="advantages__item">
+				<div class="advantages__icon">
+					<img src="assets/img/icon/Group-price.svg" alt="best price">
+				</div>
+				
+				<div class="advantages__text">
+					<div class="title">Best Price</div>
+					<div class="description">Guaranteed Gifts</div>
+				</div>
 			</div>
 		</div>
-
-		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
-
-		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/icon/Vector-return.svg" alt="free return">
-			<div class="advantage__text">
-				<div class="title">Free Returns</div>
-				<div class="description">Within 25 Days</div>
-			</div>
-		</div>
-
-		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
-
-		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/icon/Group-secure.svg" alt="100% secure">
-			<div class="advantage__text">
-				<div class="title">100% Secure</div>
-				<div class="description">100% Secure payment</div>
-			</div>
-		</div>
-		<img class="vertical-line" src="assets/img/icon/Line22.svg" alt="vertical line">
-		<div class="advantage">
-			<img class="advantage__icon" src="assets/img/icon/Group-price.svg" alt="best price">
-			<div class="advantage__text text">
-				<div class="title">Best Price</div>
-				<div class="description">Guaranteed Gifts</div>
-			</div>
-		</div>
+		
 	</div>
-
-
-	<!----------------------Part 5 Смирнова Анна начало----------------------->
-	<div class="articles" id="blog">
+	<section class="articles" id="blog">
 		<div class="articles__recent">
 			<hr class="articles__recent_line line">
 			<h3 class="articles__recent_title">RECENT ARTICLES</h3>
@@ -614,130 +650,204 @@
 		<div class="articles__latest">
 			<h2 class="articles__latest_title">Read Our Latest Articles</h2>
 		</div>
-		<div class="slider-articles">
-			<div class="arrow">
-				<img src="assets/img/arrow.png" alt="">
-			</div>
-			<div class="articles__group">
+		<!-- Slider main container -->
+		<div class="articles__swiper swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide slide">
+				<div class="slide__wrap">
+					<div class="slide__img">
+						<img src="assets/img/catalog/armchair.jpg" alt="Sofa">
+					</div>
+					<div class="slide__square">
+						<span>05</span>
+						<span>May</span>
+					</div>
+					<div class="slide__info">
+						<div class="slide__info-user">
+							<div class="user">
+								<img src="assets/img/icon/person.png" alt="person">
+								<a href="#" class="info__text name">John Doe</a>
+							</div>
+							<div class="comments">
+								<img src="assets/img/icon/comment.png" alt="comment">
+								<a href="#" class="info__text">9 Comments</a>
+							</div>
+							
+						</div>
+						<p>Things to Know When Choosing the Perfect Sofa</p>
+						<div class="slide__button-line">
+							<button class="slide__button">See More Product</button>
+						</div>
+					</div>
 
-				<div class="articles__group_block">
-					<img src="assets/img/catalog/armchair.jpg"
-						alt="Things to Know When Choosing
-                the Perfect Sofa" class="articles__group_block_picture">
-					<div class="articles__group_block_calendar">
-						<p class="date">05</p>
-						<p class="month">May</p>
-					</div>
-					<div class="articles__group_block_content">
-						<div class="info">
-							<img src="assets/img/icon/person.png" alt="" class="info__img">
-							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/icon/comment.png" alt="" class="info__img">
-							<a href="" class="info__text">9 Comments</a>
-						</div>
-						<div class="article">
-							<p>Things to Know When Choosing
-								the Perfect Sofa</p>
-						</div>
-						<div class="button5">
-							<a class="link" href="">See More Product</a>
-						</div>
-					</div>
 				</div>
-				<div class="articles__group_block">
-					<img src="assets/img/catalog/blue-sofa.jpg"
-						alt="Things to Know When Choosing
-                the Perfect Sofa" class="articles__group_block_picture">
-					<div class="articles__group_block_calendar">
-						<p class="date">23</p>
-						<p class="month">Jun</p>
+				
+			</div>
+			<div class="swiper-slide">
+				<div class="slide__wrap">
+					<div class="slide__img">
+						<img src="assets/img/catalog/blue-sofa.jpg" alt="Sofa">
 					</div>
-					<div class="articles__group_block_content">
-						<div class="info">
-							<img src="assets/img/icon/person.png" alt="" class="info__img">
-							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/icon/comment.png" alt="" class="info__img">
-							<a href="" class="info__text">9 Comments</a>
-						</div>
-						<div class="article">
-							<p>Things to Know When Choosing
-								the Perfect Sofa</p>
-						</div>
-						<div class="button5">
-							<a class="link" href="">See More Product</a>
-						</div>
+					<div class="slide__square">
+						<span>23</span>
+						<span>Jun</span>
 					</div>
-				</div>
-				<div class="articles__group_block">
-					<img src="assets/img/catalog/green-sofa.jpg"
-						alt="Things to Know When Choosing
-                the Perfect Sofa" class="articles__group_block_picture">
-					<div class="articles__group_block_calendar">
-						<p class="date">15</p>
-						<p class="month">May</p>
-					</div>
-					<div class="articles__group_block_content">
-						<div class="info">
-							<img src="assets/img/icon/person.png" alt="" class="info__img">
-							<a href="" class="info__text name">John Doe</a>
-							<img src="assets/img/icon/comment.png" alt="" class="info__img">
-							<a href="" class="info__text">9 Comments</a>
+					<div class="slide__info">
+						<div class="slide__info-user">
+							<div class="user">
+								<img src="assets/img/icon/person.png" alt="person">
+								<a href="#" class="info__text name">John Doe</a>
+							</div>
+							<div class="comments">
+								<img src="assets/img/icon/comment.png" alt="comment">
+								<a href="#" class="info__text">3 Comments</a>
+							</div>
+							
 						</div>
-						<div class="article">
-							<p>Things to Know When Choosing
-								the Perfect Sofa</p>
-						</div>
-						<div class="button5">
-							<a class="link" href="">See More Product</a>
+						<p>Things to Know When Choosing the Perfect Sofa</p>
+						<div class="slide__button-line">
+							<button class="slide__button">See More Product</button>
 						</div>
 					</div>
+
 				</div>
 			</div>
-			<div class="arrow">
-				<img src="assets/img/arrow1.png" alt="">
+			<div class="swiper-slide">
+				<div class="slide__wrap">
+					<div class="slide__img">
+						<img src="assets/img/catalog/green-sofa.jpg" alt="Sofa">
+					</div>
+					<div class="slide__square">
+						<span>15</span>
+						<span>May</span>
+					</div>
+					<div class="slide__info">
+						<div class="slide__info-user">
+							<div class="user">
+								<img src="assets/img/icon/person.png" alt="person">
+								<a href="#" class="info__text name">John Doe</a>
+							</div>
+							<div class="comments">
+								<img src="assets/img/icon/comment.png" alt="comment">
+								<a href="#" class="info__text">6 Comments</a>
+							</div>
+							
+						</div>
+						<p>Things to Know When Choosing the Perfect Sofa</p>
+						<div class="slide__button-line">
+							<button class="slide__button">See More Product</button>
+						</div>
+					</div>
+
+				</div>
 			</div>
+			<div class="swiper-slide">
+				<div class="slide__wrap">
+					<div class="slide__img">
+						<img src="assets/img/catalog/armchair.jpg" alt="Sofa">
+					</div>
+					<div class="slide__square">
+						<span>05</span>
+						<span>May</span>
+					</div>
+					<div class="slide__info">
+						<div class="slide__info-user">
+							<div class="user">
+								<img src="assets/img/icon/person.png" alt="person">
+								<a href="#" class="info__text name">John Doe</a>
+							</div>
+							<div class="comments">
+								<img src="assets/img/icon/comment.png" alt="comment">
+								<a href="#" class="info__text">9 Comments</a>
+							</div>
+							
+						</div>
+						<p>Things to Know When Choosing the Perfect Sofa</p>
+						<div class="slide__button-line">
+							<button class="slide__button">See More Product</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="slide__wrap">
+					<div class="slide__img">
+						<img src="assets/img/catalog/blue-sofa.jpg" alt="Sofa">
+					</div>
+					<div class="slide__square">
+						<span>23</span>
+						<span>Jun</span>
+					</div>
+					<div class="slide__info">
+						<div class="slide__info-user">
+							<div class="user">
+								<img src="assets/img/icon/person.png" alt="person">
+								<a href="#" class="info__text name">John Doe</a>
+							</div>
+							<div class="comments">
+								<img src="assets/img/icon/comment.png" alt="comment">
+								<a href="#" class="info__text">3 Comments</a>
+							</div>
+							
+						</div>
+						<p>Things to Know When Choosing the Perfect Sofa</p>
+						<div class="slide__button-line">
+							<button class="slide__button">See More Product</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</div>
-
-	</div>
-
-
-	</div>
-	<!----------------------Part 5 Смирнова Анна конец------------------------>
-
-	<!-- footer -->
-	<footer>
-		<div class="footer_container">
-			<div class="logo_text_div">
-				<div>
-					<img id="logo_footer" src="assets/img/logo/Logo_footer.png" alt="Логотип дом" />
+	</section>
+</main>	
+	<footer class="footer">
+		<div class="footer__wrap">
+			<div class="footer__logo">
+				<div class="logo-img">
+					<img src="assets/img/logo/Logo_footer.png" alt="logo" />
 				</div>
-				<h1 class="logo_text">interior</h1>
+				<p>interior</p>
 			</div>
-			<div>
-				<h2 class="footer_topic">Join Now For Early Access</h2>
+			<div class="footer__topic">
+				<p>Join Now For Early Access</p>
 			</div>
-			<div>
-				<p class="footer_text">
-					Suspendisse eu velit est. Cras nec vestibulum <br />quam. Donec tincidunt purus nec enim
+			<div class="footer__text">
+				<p>
+					Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim
 					tincidunt, sit
 				</p>
 			</div>
-			<form class="footer_form">
+			<form class="footer__form">
 				<input class="email" type="email" placeholder="Enter your email address..." />
-				<button class="footer_button">SUBSCRIBE</button>
+				<button class="btn">SUBSCRIBE</button>
 			</form>
 		</div>
 	</footer>
-	<address id="contact">
-		<div class="address_container">
-			<p class="adress_text">Copyright 2022 - Designed & Developed by Frenify</p>
-			<div class="network_logo">
-				<a href="#"><img src="assets/img/logo/facebook_logo.svg" alt="иконка фейсбук" /></a><a href="#"><img src="assets/img/logo/Insta_logo.svg"
-						alt="иконка инстаграмм" /></a><a href="#"><img src="assets/img/logo/twitter_logo.svg"
-						alt="иконка твиттер" /></a><a href="#"><img src="assets/img/logo/logo2.svg" alt="иконка" /></a>
+	<address id="contact" class="address">
+		<div class="address__wrap">
+			<div class="address__copyright">
+				<p >Copyright 2022 - Designed & Developed by Frenify</p>
+			</div>
+			
+			<div class="address__social">
+				<a href="#"><img src="assets/img/logo/facebook_logo.svg" alt="facebook" /></a>
+				<a href="#"><img src="assets/img/logo/Insta_logo.svg" alt="Instagram" /></a>
+				<a href="#"><img src="assets/img/logo/twitter_logo.svg" alt="twitter" /></a>
+				<a href="#"><img src="assets/img/logo/linkedin.svg" alt="linkedin" /></a>
 			</div>
 		</div>
 	</address>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/index.js"></script>
 </body>
 
 </html>
