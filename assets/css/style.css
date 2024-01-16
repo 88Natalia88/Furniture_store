@@ -917,10 +917,19 @@
 .block-name__button {
   height: 40px;
   width: 135px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
   color: #1B1A1A;
   font-size: 14px;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .block-name__button:hover {
   background-color: #999999;
@@ -943,17 +952,18 @@
 .block-name__button::before {
   content: "";
   position: absolute;
-  border-right: 0.6px solid #1B1A1A;
+  background: #1B1A1A;
   height: 47px;
-  /*width: 114px;*/
+  width: 0.6px;
   left: 0;
   bottom: 0;
 }
 .block-name__button-line::before {
   content: "";
   position: absolute;
-  border-top: 0.6px solid #1B1A1A;
   width: 140px;
+  height: 0.6px;
+  background: #1B1A1A;
   right: 1px;
 }
 .block-name__button-line::after {
@@ -961,6 +971,8 @@
   position: absolute;
   border-left: 0.6px solid #1B1A1A;
   height: 45px;
+  right: 0;
+  top: 0;
 }
 
 @media (max-width: 1024px) {
@@ -1254,9 +1266,7 @@
   height: 37px;
   width: 133px;
   position: relative;
-  margin-bottom: 25px;
-  margin-left: 29px;
-  margin-top: 13px;
+  margin: 13px 0 25px 29px;
 }
 .articles .slide__button-line::before {
   content: "";
@@ -1276,11 +1286,6 @@
 
 .swiper {
   width: 1110px;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #1B1A1A;
 }
 
 @media (max-width: 1024px) {
@@ -1336,10 +1341,6 @@
   }
   .swiper {
     width: 680px;
-  }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    display: none;
   }
 }
 @media (max-width: 576px) {
